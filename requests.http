@@ -1,0 +1,33 @@
+# Загрузка файлов через название в строке имени файла
+###
+
+POST http://localhost:8000/api/v1/item/?file_name=ZAGOLOVOK_ITEMS
+Content-Type: application/json
+Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTAyNjAzLCJpYXQiOjE2OTg4OTc4MDMsImp0aSI6IjExYWRmNzkxOTc1YTQwYTVhNDFhMmU4ZTFlM2ZkNzVmIiwidXNlcl9pZCI6MX0.v7Uyd-jiHOxC-8utb0PbwZK3KVueK0gEhSj8LU25kqg
+
+{
+  "proverka": 654
+}
+
+###
+
+POST http://localhost:8000/api/v1/pass/?file_name=Zagolovok_zaglushki
+Content-Type: application/json
+Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NTAyNjAzLCJpYXQiOjE2OTg4OTc4MDMsImp0aSI6IjExYWRmNzkxOTc1YTQwYTVhNDFhMmU4ZTFlM2ZkNzVmIiwidXNlcl9pZCI6MX0.v7Uyd-jiHOxC-8utb0PbwZK3KVueK0gEhSj8LU25kqg
+
+{
+  "name" : "444" 
+}
+
+###
+
+# Создание токена JWT
+POST http://localhost:8000/api/v1/auth/jwt/create/
+Content-Type: application/json
+
+{
+  "username": "admin@admin.org",
+  "password": "admin"
+}
+
+###
